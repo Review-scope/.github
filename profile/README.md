@@ -1,12 +1,37 @@
-## Hi there 👋
+# ReviewScope – AI-Powered Code Review Automation
 
-<!--
+ReviewScope is an intelligent PR review platform that combines **static analysis**, **semantic context**, and **AI reasoning** to provide comprehensive, fast code reviews on GitHub.
 
-**Here are some ideas to get you started:**
+## Overview
 
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+ReviewScope analyzes pull requests end-to-end, evaluating code quality, security, performance, and maintainability. It runs directly on your own API keys, so you control costs and data.
+
+**Key Capabilities:**
+- 🔍 **Static Analysis** – AST-based rule detection (no LLM required, always free)
+- 🧠 **AI-Powered Reviews** – Complexity-aware routing between fast (Gemini) and accurate (GPT-4) models
+- 📚 **Semantic RAG** – Retrieves relevant code context from your repository's history
+- ⚡ **Smart Batching** – Handles large PRs by intelligently chunking files
+- 🎯 **Rule Validation** – LLM classifies static findings (valid/false-positive/contextual)
+- 💰 **BYO API Keys** – Transparent pricing, you pay only for what you use
+
+## Technology Stack
+
+**Frontend & Dashboard:**
+- Next.js 16 (Turbopack)
+- TailwindCSS + shadcn/ui
+- NextAuth (GitHub OAuth)
+
+**Backend & Processing:**
+- Node.js Worker (background review jobs)
+- Drizzle ORM + PostgreSQL
+- Upstash Redis (caching & rate limiting)
+
+**AI & LLM:**
+- Gemini 2.5 (fast, low-cost reviews)
+- GPT-4 (complex PRs, high accuracy)
+- Context Engine (RAG + chunking)
+
+**Integration:**
+- GitHub Webhooks (real-time PR events)
+- GitHub Marketplace (billing integration)
+- GitHub API (PR data, code retrieval)
