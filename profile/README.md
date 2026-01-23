@@ -27,7 +27,7 @@ ReviewScope analyzes pull requests end-to-end, evaluating code quality, security
 **Backend & Processing:**
 - Node.js Worker (background review jobs)
 - Drizzle ORM + PostgreSQL
-- Upstash Redis (caching & rate limiting)
+- Redis (caching & rate limiting)
 
 **AI & LLM:**
 - Gemini 2.5 (fast, low-cost reviews)
@@ -36,5 +36,5 @@ ReviewScope analyzes pull requests end-to-end, evaluating code quality, security
 
 **Integration:**
 - GitHub Webhooks (real-time PR events)
-- GitHub Marketplace (billing integration)
+- DODO Payments (billing integration)
 - GitHub API (PR data, code retrieval)
