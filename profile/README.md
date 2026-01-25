@@ -2,7 +2,8 @@
 
 ReviewScope is an intelligent PR review platform that combines **static analysis**, **semantic context**, and **AI reasoning** to provide comprehensive, fast code reviews on GitHub.
 
-<img width="1884" height="855" alt="Screenshot 2026-01-18 231855" src="https://github.com/user-attachments/assets/7734e009-b8de-48c6-94e7-3d9565c3c023" />
+<img width="1886" height="858" alt="image" src="https://github.com/user-attachments/assets/0db07097-674d-42c1-a65b-042ad7ac203c" />
+
 
 
 ## Overview
